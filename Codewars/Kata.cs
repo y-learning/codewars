@@ -55,8 +55,7 @@ namespace CodeWars
 
         public static bool IsSquare( int n )
         {
-            if ( n == 1 ) return true;
-            for ( var i = 0; i <= n / 2; i++ )
+            for ( var i = 0; i <= n / 2 + 1; i++ )
                 if ( n == i * i ) return true;
                 else if ( n < i * i ) return false;
 
